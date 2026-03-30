@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Hồ Thị Bích Nguyệt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="grain"></div>
+  <!-- Lớp hiệu ứng nổi (hạt sáng / cánh hoa / bướm), không che nội dung -->
+  <div id="overlay-effects" aria-hidden="true"></div>
+  <!-- Thanh điều hướng: click để nhảy đến từng phần -->
+  <header class="top-nav">
+    <div class="nav-inner container">
+      <nav class="nav-links">
+        <a href="#hero">Trang chủ</a>
+        <a href="#about">Về tôi</a>
+        <a href="#education">Học vấn</a>
+        <a href="#experience">Kinh nghiệm</a>
+        <a href="#activities">Hoạt động</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#contact" class="pill">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hoa văn trang trí -->
+    <div class="floral floral-hero"></div>
+    <div class="floral floral-mid"></div>
+    <div class="floral floral-bottom"></div>
+
+    <!-- HERO SECTION: thay ảnh hero ở assets/images/hero.jpg và chỉnh text/nút tại đây -->
+    <section class="hero reveal" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Hi, mình là <span class="scribble-underline">Hồ Thị Bích Nguyệt</span></h1>
+          <p class="lead">
+            Chào mừng bạn đến với góc nhỏ của một sinh viên năm 3 chuyên ngành Quản trị Kinh doanh đang tập tành làm "người lớn" trong ngành Quản trị Kinh doanh. Ở đây không có những lý thuyết khô khan, chỉ có hành trình học hỏi, trải nghiệm và những câu chuyện thực tế của mình.
+          </p>
+          <button class="btn" id="contactBtn" aria-label="Đi tới liên hệ">CONTACT ME</button>
+        </div>
+        <figure class="polaroid tilt-right skeleton">
+          <!-- Thay ảnh chân dung tại đây -->
+          <img src="assets/images/hero.jpg" alt="Chân dung Hồ Thị Bích Nguyệt" class="lazy-img">
+          <figcaption>Góc nhìn cá nhân</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- THÔNG TIN VỀ TÔI: chỉnh text & ảnh about.jpg -->
+    <section class="section reveal" id="about">
+      <div class="container split">
+        <div class="title-block">
+          <h2 class="section-title highlight">Thông tin về tôi</h2>
+        </div>
+        <div class="split-grid">
+          <figure class="polaroid tilt-left skeleton">
+            <!-- Thay ảnh tại assets/images/about.jpg -->
+            <img src="assets/images/about.jpg" alt="Ảnh giới thiệu" class="lazy-img">
+          </figure>
+          <div class="section-text">
+            <p>
+              Là một sinh viên năm 3 thuộc chuyên ngành Quản trị Kinh doanh của Trường Đại học Duy Tân, mình tin rằng kiến thức giá trị nhất không chỉ nằm ở giảng đường mà còn ở cách chúng ta lăn xả vào thực tế. Điểm mạnh của mình là khả năng thích nghi nhanh, tinh thần trách nhiệm cao và không ngại thử thách.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HỌC VẤN: chỉnh text & ảnh education.jpg -->
+    <section class="section reveal" id="education">
+      <div class="container split">
+        <div class="title-block">
+          <h2 class="section-title highlight">Học vấn : chuyên ngành Quản trị Kinh doanh PSU Kinh tế Việt Mỹ</h2>
+        </div>
+        <div class="split-grid reverse">
+          <figure class="polaroid tilt-right skeleton">
+            <img src="assets/images/education.jpg" alt="Học vấn" class="lazy-img">
+          </figure>
+          <div class="section-text">
+            <p>
+              Trong 3 năm đại học, mình luôn chú trọng ứng dụng lí thuyết quản trị vào thực tiễn. Dưới đây là một số môn học phân tích toàn diện:
+            </p>
+            <ul class="dot-list">
+              <li>Chiến lược marketing, cấu trúc tổ chức và kênh thương mại điện tử của TH True Milk.</li>
+              <li>Bên cạnh đó, mình cũng trực tiếp thu thập số liệu xây dựng hàm cầu cho Phân bón Phú Mỹ (DPM), kết hợp xử lý các bài toán năng suất vận hành và tình huống quản trị nhân sự.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KINH NGHIỆM: chỉnh text & ảnh experience.jpg -->
+    <section class="section reveal" id="experience">
+      <div class="container split experience">
+        <div class="title-block">
+          <h2 class="section-title oval">Kinh nghiệm</h2>
+        </div>
+        <div class="split-grid">
+          <div class="section-text">
+            <p class="eyebrow">5/2024 – Barista | Katinat Coffee &amp; Tea House</p>
+            <ul class="dot-list">
+              <li>Kỹ năng giao tiếp.</li>
+              <li>Xử lý tình huống linh hoạt trong môi trường nhịp độ nhanh.</li>
+              <li>Hiểu được cách vận hành thực tế của một chuỗi F&amp;B lớn.</li>
+            </ul>
+          </div>
+          <figure class="polaroid tall tilt-right skeleton">
+            <img src="assets/images/experience.jpg" alt="Katinat Coffee" class="lazy-img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOẠT ĐỘNG NGOẠI KHÓA: chỉnh text & ảnh activity-*.jpg -->
+    <section class="section reveal" id="activities">
+      <div class="container activity-grid">
+        <div class="title-row">
+          <h2 class="section-title highlight">Hoạt Động Ngoại Khóa</h2>
+        </div>
+        <div class="activity-content">
+          <p class="lead">
+            Tình nguyện viên – Phát quà Trung thu tại Ebest: Tham gia tổ chức và điều phối sự kiện, trực tiếp trao những phần quà ý nghĩa đến mọi người, góp phần lan tỏa giá trị cộng đồng.
+          </p>
+          <div class="free-layout">
+            <figure class="polaroid tiny tilt-left skeleton">
+              <img src="assets/images/activity.jpg" alt="Hoạt động 1" class="lazy-img">
+            </figure>
+            <figure class="polaroid tiny tilt-right skeleton">
+              <img src="assets/images/activity-2.jpg" alt="Hoạt động 2" class="lazy-img">
+            </figure>
+            <figure class="polaroid tiny tilt-left skeleton">
+              <img src="assets/images/activity-3.jpg" alt="Hoạt động 3" class="lazy-img">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THÊM HOẠT ĐỘNG + TIẾNG ANH: chỉnh text & ảnh activity/english -->
+    <section class="section reveal" id="more-activities">
+      <div class="container double-columns">
+        <div class="column-block">
+          <h3 class="section-subtitle highlight">Thành viên – Hội trại Hành trình tuổi trẻ</h3>
+          <p>Tham gia các hoạt động teambuilding, rèn luyện kỹ năng lãnh đạo bản thân và tinh thần đồng đội.</p>
+          <figure class="polaroid tilt-left skeleton">
+            <img src="assets/images/activity-4.jpg" alt="Hội trại" class="lazy-img">
+          </figure>
+        </div>
+        <div class="column-block">
+          <h3 class="section-subtitle highlight">Chương trình "English for On-Track Graduation"</h3>
+          <p>Chủ động rèn luyện và nâng cao năng lực ngoại ngữ, chuẩn bị hành trang vững chắc cho môi trường làm việc quốc tế sau khi tốt nghiệp.</p>
+          <figure class="polaroid tilt-right skeleton">
+            <img src="assets/images/english.jpg" alt="Chương trình tiếng Anh" class="lazy-img">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- KỸ NĂNG: chỉnh nội dung bullet tại đây -->
+    <section class="section reveal" id="skills">
+      <div class="container skills">
+        <div class="title-row">
+          <h2 class="section-title highlight">Kỹ năng</h2>
+        </div>
+        <ul class="dot-list wide">
+          <li><strong>Kỹ năng chuyên môn:</strong> Phân tích dữ liệu (thu thập/ xử lý/ diễn giải hỗ trợ quyết định); nghiên cứu thị trường (nhu cầu, xu hướng, đối thủ); quản trị nhân sự (tổ chức, phát triển nguồn lực); marketing (xây dựng thương hiệu, tiếp cận khách hàng, triển khai chiến lược cơ bản).</li>
+          <li><strong>Kỹ năng mềm:</strong> Dịch vụ khách hàng (lắng nghe, tạo trải nghiệm tích cực); làm việc nhóm hiệu quả (phối hợp đạt mục tiêu); thích nghi nhanh (học nhanh, sẵn sàng thay đổi theo yêu cầu công việc).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT: chỉnh thông tin liên hệ tại đây -->
+    <section class="section contact reveal" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title oval">Tôi rất vui nếu bạn liên hệ.</h2>
+        <div class="contact-details">
+          <p>✉ Email: <a href="mailto:bichnguyet1312005@gmail.com">bichnguyet1312005@gmail.com</a></p>
+          <p>☎ SDT: <a href="tel:0823459239">0823459239</a></p>
+          <p>📍 Địa chỉ: Điện Biên Phủ</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Hướng dẫn thêm section mới: copy cấu trúc <section class="section reveal">...</section>, thêm class .reveal để có animation, đặt ảnh vào assets/images/ và cập nhật src tương ứng. -->
+</body>
+</html>
